@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>userMediaJS by skulldev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">userMediaJS</h1>
+      <h2 class="project-tagline">userMediaJS is a simple to use API for connecting to user media devices such as microphones and webcams.</h2>
+      <a href="https://github.com/skulldev/userMediaJS" class="btn">View on GitHub</a>
+      <a href="https://github.com/skulldev/userMediaJS/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/skulldev/userMediaJS/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="usermediajs" class="anchor" href="#usermediajs" aria-hidden="true"><span class="octicon octicon-link"></span></a>userMediaJS</h1>
+
+<p><img src="https://img.shields.io/badge/build-stable%20production-brightgreen.svg" alt="stable production release">
+<img src="https://img.shields.io/badge/current%20version-1.0.0-yellow.svg" alt="current version 1.0.0"></p>
+
+<p>userMediaJS is a simple to use API for connecting to user media devices such as microphones and webcams. Simply call the userMedia object and one of it's 3 current methods: userMedia.getVideo(source), userMedia.getAudio(source), userMedia.getVideoAndAudio(source).</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>To install, there are a few methods:</p>
+
+<p><strong>Using Git</strong></p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1">$ <span class="pl-c1">git</span> <span class="pl-k">clone</span> <span class="pl-c1">https</span>:<span class="pl-c">//github.com/skulldev/userMediaJS</span></span></pre></div>
+
+<p><strong>Using your browser</strong></p>
+
+<p>Visit the website and download the files simply and easily in .zip or .tar.gz format!</p>
+
+<pre><code>https://skulldev.github.io/userMediaJS/
+</code></pre>
+
+<p><strong>Or visit the github page:</strong></p>
+
+<pre><code>https://github.com/skulldev/userMediaJS
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="capture-a-users-webcam-and-output-to-screen" class="anchor" href="#capture-a-users-webcam-and-output-to-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Capture a users webcam and output to screen</h3>
+
+<p>This is very simple. All you need to do is call the userMedia.getVideo(source) function.</p>
+
+<p>This function has one parameter, the source parameter, which is mandatory. This parameter accepts a css selctor for the output.</p>
+
+<p>For example:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">video</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>output<span class="pl-pds">"</span></span> <span class="pl-e">autoplay</span> <span class="pl-e">controls</span>&gt;&lt;/<span class="pl-ent">video</span>&gt;</pre></div>
+
+<div class="highlight highlight-source-js"><pre>userMedia.getVideo(<span class="pl-s"><span class="pl-pds">'</span>#output<span class="pl-pds">'</span></span>);</pre></div>
+
+<p>This will prompt the user to allow the browser to access their webcam and then if they allow the access, it will output it to the video tag selected.</p>
+
+<h3>
+<a id="capture-a-users-microphone-sound-and-playback" class="anchor" href="#capture-a-users-microphone-sound-and-playback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Capture a users microphone sound and playback</h3>
+
+<p>This is very simple. All you need to do is call the userMedia.getAudi(source) function.</p>
+
+<p>This function has one parameter, the source parameter, which is mandatory. This parameter accepts a css selctor for the output.</p>
+
+<p>For example:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">audio</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>output<span class="pl-pds">"</span></span> <span class="pl-e">controls</span>&gt;&lt;/<span class="pl-ent">audio</span>&gt;</pre></div>
+
+<div class="highlight highlight-source-js"><pre>userMedia.getAudio(<span class="pl-s"><span class="pl-pds">'</span>#output<span class="pl-pds">'</span></span>);</pre></div>
+
+<p>This will prompt the user to allow the browser to access their microphone device and then if they allow the access, it will output it to the audio tag selected and playback sound from the microphone.</p>
+
+<h3>
+<a id="capture-a-users-webcam-and-microphone-and-then-output-to-screen" class="anchor" href="#capture-a-users-webcam-and-microphone-and-then-output-to-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Capture a users webcam and microphone and then output to screen</h3>
+
+<p>This is very simple. All you need to do is call the userMedia.getVideoAndAudio(source) function.</p>
+
+<p>This function has one parameter, the source parameter, which is mandatory. This parameter accepts a css selctor for the output.</p>
+
+<p>For example:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">video</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>output<span class="pl-pds">"</span></span> <span class="pl-e">autoplay</span> <span class="pl-e">controls</span>&gt;&lt;/<span class="pl-ent">video</span>&gt;</pre></div>
+
+<div class="highlight highlight-source-js"><pre>userMedia.getVideo(<span class="pl-s"><span class="pl-pds">'</span>#output<span class="pl-pds">'</span></span>);</pre></div>
+
+<p>This will prompt the user to allow the browser to access their webcam and microphone and then if they allow the access, it will output it to the video tag selected and playback any sound coming into their microphone also.</p>
+
+<h3>
+<a id="why-such-a-framework" class="anchor" href="#why-such-a-framework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why such a framework?</h3>
+
+<p>The idea of userMediaJS is to be scaleable. I aim to eventually allow not only single user playback but eventually allow multiuser playback and data transmission for anything from recording audio to having two way face to face conversations. In version 1.0.0, I lay a foundation and with the github community and myself, I aim to scale this API in many ways and forms.</p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code>
+</li>
+<li>Commit your changes: <code>git commit -am 'Add some feature'</code>
+</li>
+<li>Push to the branch: <code>git push origin my-new-feature</code>
+</li>
+<li>Submit a pull request :D</li>
+</ol>
+
+<h2>
+<a id="history" class="anchor" href="#history" aria-hidden="true"><span class="octicon octicon-link"></span></a>History</h2>
+
+<p><strong>1.0.0</strong></p>
+
+<ul>
+<li>Initial commit of the animationAPI framework</li>
+<li>The ability to capture user audio via their microphone and video via their webcam</li>
+</ul>
+
+<h2>
+<a id="anything-else" class="anchor" href="#anything-else" aria-hidden="true"><span class="octicon octicon-link"></span></a>Anything else?</h2>
+
+<p>If you have any questions, comments or anything else, please feel free to ask via the <a href="http://jamesrobb.co.uk/contact">contact form</a> or tweet me <a href="http://twitter.com/jamesrweb">@jamesrweb</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/skulldev/userMediaJS">userMediaJS</a> is maintained by <a href="https://github.com/skulldev">skulldev</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
