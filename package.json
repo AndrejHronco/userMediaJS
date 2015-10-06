@@ -1,0 +1,30 @@
+{
+    "name": "userMediaJS",
+    "version": "1.0.0",
+    "description": "custom API for connecting to user media such as webcams, microphones, etc in web projects",
+    "author": "James Robb <info@jamesrobb.co.uk>",
+    "contributors": [{
+        "name": "James Robb",
+        "email": "info@jamesrobb.co.uk"
+  }],
+    "bin": {
+        "module-name": "./bin/module-name"
+    },
+    "main": "js/userMedia.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/skulldev/userMediaJS"
+    },
+    "keywords": [
+      "userMedia",
+      "userMediaJS",
+      "userMedia JS",
+      "User Media",
+      "javascript API",
+      "API"
+],
+    "preferGlobal": true,
+    "private": true,
+    "analyze": true,
+    "license": "MIT"
+}
