@@ -25,7 +25,7 @@ https://skulldev.github.io/userMediaJS/
 **Or visit the github page:**
 
 ```
-https://skulldev.github.io/userMediaJS/
+https://github.com/skulldev/userMediaJS
 ```
 
 ## Usage
