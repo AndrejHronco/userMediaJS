@@ -1,4 +1,4 @@
-# animatedJS
+# userMediaJS
 
 ![stable production release](https://img.shields.io/badge/build-stable%20production-brightgreen.svg)
 ![current version 1.0.0](https://img.shields.io/badge/current%20version-1.0.0-yellow.svg)
