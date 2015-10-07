@@ -79,7 +79,7 @@ For example:
 ```
 
 ```javascript
-userMedia.getVideo('#output');
+userMedia.getVideoAndAudio('#output');
 ```
 
 This will prompt the user to allow the browser to access their webcam and microphone and then if they allow the access, it will output it to the video tag selected and playback any sound coming into their microphone also.
