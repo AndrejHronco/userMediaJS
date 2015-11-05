@@ -1,7 +1,7 @@
 # userMediaJS
 
 ![stable production release](https://img.shields.io/badge/build-stable%20production-brightgreen.svg)
-![current version 1.0.0](https://img.shields.io/badge/current%20version-1.0.0-yellow.svg)
+![current version 1.3.0](https://img.shields.io/badge/current%20version-1.3.0-yellow.svg)
 
 userMediaJS is a simple to use API for connecting to user media devices such as microphones and webcams. Simply call the userMedia object and one of it's 3 current methods: userMedia.getVideo(source), userMedia.getAudio(source), userMedia.getVideoAndAudio(source).
 
