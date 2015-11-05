@@ -103,6 +103,10 @@ The idea of userMediaJS is to be scaleable. I aim to eventually allow not only s
 - Initial commit of the animationAPI framework
 - The ability to capture user audio via their microphone and video via their webcam
 
+**1.2.0 & 1.3.0**
+
+- Added files for the npm registry
+
 Anything else?
 ----------
 
